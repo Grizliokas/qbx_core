@@ -296,7 +296,7 @@ if isServer then
             coords = vec4(pedCoords.x, pedCoords.y, pedCoords.z, GetEntityHeading(source))
         end
 
-        local vehicleType = exports.qbx_core:GetVehiclesByHash(joaat(model)).type
+        local vehicleType = exports.qbx_core:GetVehiclesByHash(model).type
         if not vehicleType then
             warn(('No vehicle type found for model: %s temp vehicle was created and taken in type'):format(
                 model))
